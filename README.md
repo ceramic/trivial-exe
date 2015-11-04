@@ -1,6 +1,7 @@
 # trivial-exe
 
 [![Build Status](https://travis-ci.org/ceramic/trivial-exe.svg?branch=master)](https://travis-ci.org/ceramic/trivial-exe)
+[![Coverage Status](https://coveralls.io/repos/ceramic/trivial-exe/badge.svg?branch=master&service=github)](https://coveralls.io/github/ceramic/trivial-exe?branch=master)
 
 Tools for working with executables
 
