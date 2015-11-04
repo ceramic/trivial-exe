@@ -1,5 +1,7 @@
 # trivial-exe
 
+[![Build Status](https://travis-ci.org/ceramic/trivial-exe.svg?branch=master)](https://travis-ci.org/ceramic/trivial-exe)
+
 Tools for working with executables
 
 # Usage
