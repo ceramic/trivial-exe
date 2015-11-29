@@ -10,7 +10,10 @@
 
 (test simple-test
   (is-true
-   (pathnamep (trivial-exe:executable-pathname))))
+   (pathnamep (trivial-exe:executable-pathname)))
+  (finishes
+    (trivial-exe:ensure-executable
+     (asdf:system-relative-pathname :trivial-exe #p"README.md"))))
 
 (defun run-tests ()
   (run! 'tests))
