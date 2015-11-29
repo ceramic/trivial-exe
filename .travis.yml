@@ -34,7 +34,7 @@ script:
                     (print c)
                     (uiop:quit -1)))'
         -e '(ql:quickload :trivial-exe-test)'
-        -e '(coveralls:with-coveralls ()
+        -e '(coveralls:with-coveralls (:exclude (list "t"))
               (trivial-exe-test:run-tests))'
 
 notifications:
