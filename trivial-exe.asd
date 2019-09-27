@@ -7,8 +7,7 @@
   :bug-tracker "https://github.com/ceramic/trivial-exe/issues"
   :source-control (:git "git@github.com:ceramic/trivial-exe.git")
   :depends-on (:uiop
-               #-(or win32 mswindows)
-               :osicat)
+               (:feature :os-windows :osicat))
   :components ((:module "src"
                 :serial t
                 :components
