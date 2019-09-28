@@ -22,12 +22,12 @@
 
 (defun ensure-executable (pathname)
   "Ensure a binary is executable."
-  #-(or win32 mswindows)
+  #-os-windows
   (progn
     (setf (osicat:file-permissions pathname)
           (list :user-read
                 :user-write
                 :user-exec))
     t)
-  #+(or win32 mswindows)
+  #+os-windows
   t)
